@@ -16,25 +16,6 @@ def mask(encoding, mask_coef):
     return encoding * mask
 
 
-def visualize_flow(flow):
-    H, W = flow.shape[:2]
-    fx, fy = flow[..., 0], flow[..., 1]
-
-    mag, ang = cv2.cartToPolar(fx, fy, angleInDegrees=True)
-
-    hsv = np.zeros((H, W, 3), dtype=np.uint8)
-    hsv[..., 0] = ang / 2  # 角度 (0-360) → 色调 (0-180)
-    hsv[..., 1] = 255  # 饱和度固定
-    hsv[..., 2] = cv2.normalize(mag, None, 0, 255, cv2.NORM_MINMAX)  # 幅度 → 亮度
-
-    plt.figure()
-    rgb = cv2.cvtColor(hsv, cv2.COLOR_HSV2RGB)
-    plt.imshow(rgb)
-    plt.title("Optical Flow (HSV)")
-    plt.axis("off")
-    plt.show()
-
-
 def warp(img, flow, grid):
     # img: [H, W]
     # flow: [H, W, 2]
