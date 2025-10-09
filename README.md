@@ -7,3 +7,8 @@ Kaggle notebook tutorial ([![Kaggle: INR-OL Tutorial](https://img.shields.io/bad
 # Requirements
 * Condensed package requirements are in `\requirements.txt`. If any dependency is missing, please contact mingxuan_cai@berkeley.edu.
 * The non-standard packages you may need are tinycudann. See NVlabs/tiny-cuda-nn for installation instructions. Depending on your system, you might just be able to do pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch, or might have to cmake and build it from source.
+
+# Recommended Papers
+To understand the code, you can read following papers:
+* https://arxiv.org/pdf/2201.05989
+* https://arxiv.org/abs/1809.05231
