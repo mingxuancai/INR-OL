@@ -2,6 +2,7 @@
 Self-Supervised Learning of Optical Flow with Implicit Neural Representation
 
 # Kaggle Tutorial
+Kaggle notebook tutorial is available for use if you don't have available GPUs by hand.
 [![Kaggle: INR-OL Tutorial](https://img.shields.io/badge/Kaggle-INR--OL%20Tutorial-blue?logo=kaggle)](https://www.kaggle.com/code/matthewmxcai/inr-ol-tutorial)
 
 # Requirements
